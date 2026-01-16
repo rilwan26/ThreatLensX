@@ -16,22 +16,20 @@ Advanced security reconnaissance and vulnerability scanning platform for SOC ope
 
 ## Installation
 
-See [SETUP.md](SETUP.md) for detailed installation instructions.
-
-## Quick Start
-
-### Backend
-\`\`\`bash
 cd backend
 source venv/bin/activate
-python app.py
-\`\`\`
 
-### Frontend
-\`\`\`bash
-cd frontend
-npm start
-\`\`\`
+# Basic scan
+python scanner.py https://example.com
+
+# Deep scan with more depth
+python scanner.py https://example.com -d 3
+
+# Scan using Tor
+python scanner.py https://example.com -t
+
+# Scan with custom output file
+python scanner.py https://example.com -o my_scan_results.json
 
 ## Legal Notice
 
